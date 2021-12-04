@@ -9,7 +9,7 @@
     "nyc": "nyc check-coverage --show-process-tree",
     "test": "nyc mocha --reporter=html",
     "test2": "c8 mocha",
-    "coverage": "c8 report --reporter=mocha-lcov | coveralls"
+    "coverage": "c8 report --reporter=text-lcov | coveralls"
   },
   "author": "",
   "license": "MIT",
