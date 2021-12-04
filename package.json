@@ -4,8 +4,12 @@
   "description": "",
   "main": "index.js",
   "type": "module",
+  "c8":{
+    "exclude": ["src/.internal", "**/test"]
+  },
   "scripts": {
     "test": "c8 mocha",
+    "exclude": "src/.internal",
     "coverage": "c8 report --reporter=text-lcov | coveralls"
   },
   "author": "",
