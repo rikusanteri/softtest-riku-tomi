@@ -5,10 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "abc": "nyc --all node_modules/.bin/mocha",
-    "nyc": "nyc check-coverage --show-process-tree",
-    "test": "nyc mocha --reporter=html",
-    "test2": "c8 mocha",
+    "test": "c8 mocha",
     "coverage": "c8 report --reporter=text-lcov | coveralls"
   },
   "author": "",
