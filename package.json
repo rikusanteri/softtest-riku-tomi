@@ -5,6 +5,7 @@
   "main": "index.js",
   "type": "module",
   "c8":{
+    "all": true,
     "exclude": ["src/.internal", "**/test"]
   },
   "scripts": {

@@ -7,7 +7,6 @@ describe('the eq function', () => {
 
     it('should return true if the values are equivalent', () => {
         const object = { 'a': 1 };
-        const other = { 'a': 1 };
         const result = eq(object, object);
         assert.equal(result, true);
     });
@@ -23,7 +22,7 @@ describe('the eq function', () => {
     });
     it('should return false if the values are not equivalent', () => {
         const result4 = eq('a', Object('a'));
-        expect(result4, "to be").to.equal(false);
+        expect(result4).to.equal(false);
     });
     it('should return true if the values are equivalent', () => {
         const result = eq(NaN, NaN);

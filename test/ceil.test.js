@@ -26,6 +26,10 @@ describe('the ceil function', () => {
         assert.equal(result4, 4)
         assert.equal(result5, 6100)
     })
+    it('should round negative numbers', () => {
+        expect(ceil(-5.061 ,2)).to.equal(-5.06);
+        expect(ceil(-0.8)).to.equal(0);
+    })
 
     it('should return NaN if passed a string as first parameter', () => {
         expect(ceil('joo', 'asd')).to.be.NaN;
